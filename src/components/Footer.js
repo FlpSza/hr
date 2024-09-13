@@ -40,13 +40,16 @@ const Footer = () => {
       {isVisible && (
         <footer className="footer">
           <div className="container">
-            <p>© 2024 Nome da Empresa. Todos os direitos reservados.</p>
-            <div className="social-icons">
+            <p>© 2024 Mbr II Comercio de Materiais Reciclaveis LTDA. Todos os direitos reservados.</p>
+            <p>@</p>
+            {/* <div className="social-icons">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
               <a href="mailto:email@empresa.com">E-mail</a>
-            </div>
+            </div> */}
+            
           </div>
+
         </footer>
       )}
     </>
