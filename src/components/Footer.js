@@ -1,11 +1,55 @@
-import React from 'react';
-import '../style/Footer.css'; // Arquivo de estilo CSS opcional
+import React, { useState, useEffect } from 'react';
+import '../style/Footer.css'; // Estilo personalizado
 
 const Footer = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    let timeoutId = null;
+
+    const handleScroll = () => {
+      // Limpa o timeout para evitar múltiplas chamadas
+      if (timeoutId) clearTimeout(timeoutId);
+
+      timeoutId = setTimeout(() => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const windowHeight = window.innerHeight;
+        const fullHeight = document.documentElement.scrollHeight;
+
+        // Verifica se o usuário chegou ao final da página (com uma pequena margem)
+        if (scrollTop + windowHeight >= fullHeight - 50) {
+          setIsVisible(true);  // Exibe o Footer
+        } else {
+          setIsVisible(false); // Esconde o Footer
+        }
+      }, 100); // Atraso de 100ms para evitar múltiplas verificações rápidas
+    };
+
+    // Adiciona o event listener de scroll
+    window.addEventListener('scroll', handleScroll);
+
+    // Remove o event listener ao desmontar o componente
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (timeoutId) clearTimeout(timeoutId); // Limpa o timeout
+    };
+  }, []);
+
   return (
-    <footer>
-      <p>&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
-    </footer>
+    <>
+      {isVisible && (
+        <footer className="footer">
+          <div className="container">
+            <p>© 2024 Nome da Empresa. Todos os direitos reservados.</p>
+            <div className="social-icons">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+              <a href="mailto:email@empresa.com">E-mail</a>
+            </div>
+          </div>
+        </footer>
+      )}
+    </>
   );
 };
 

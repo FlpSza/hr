@@ -8,24 +8,29 @@
     font-size: 0.8rem; /* Tamanho da fonte menor */
     color: #fff; /* Cor do texto */
     line-height: 1rem; /* Ajusta a altura da linha do texto */
-    height: 2rem; /* Define a altura total da .top-bar */
+    height: 1.9rem; /* Define a altura total da .top-bar */
   }
-  .endereco {
-    margin-left: 3rem;
+  .endereco i {
+    margin-top: 1rem;
+    margin-right: 0.3rem; /* Adiciona espaço entre o ícone e o texto */
+    margin-left: 15rem;
+    color: #fff; /* Cor do ícone */
   }
+  
   
   /* Estilos para os ícones sociais */
   .social {
     display: flex; /* Alinha os ícones socialmente em linha */
     align-items: center; /* Alinha verticalmente os itens no centro */
     gap: 1rem; /* Espaço entre os ícones */
-    margin-right: 3rem;
+    margin-right: 15rem;
   }
   
   .social-icons {
     color: #fff; /* Cor dos ícones sociais */
     text-decoration: none; /* Remove sublinhado dos links */
     font-size: 1rem; /* Ajusta o tamanho dos ícones */
+    margin-bottom: 1rem;
   }
   
   .social-icons:hover {
@@ -34,7 +39,7 @@
   .social p {
     margin: 0;
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   
   /* Estilos para o header principal */
@@ -42,23 +47,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 2rem;
     background-color: #fff;
     color: black;
+    margin-right: 18rem;
+    height: 10rem;
   }
   
   /* Logo no espaço flexível */
   .header-logo {
-    height: 50px; /* Ajuste conforme necessário */
+    height: 160px; /* Ajuste conforme necessário */
     margin-right: 1rem; /* Espaço entre logo e título */
-    margin-left: 8rem;
-  }
-  
-  /* Título do header */
-  .main-header h1 {
-    margin: 0;
-    flex: 1; /* Faz com que o título ocupe o espaço restante */
-    text-align: center; /* Centraliza o título no espaço disponível */
+    margin-left: 12rem;
   }
   
   /* Navegação dentro do header */
@@ -80,5 +80,7 @@
   nav ul li a {
     color: black;
     text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
   }
   
