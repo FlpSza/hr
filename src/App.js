@@ -1,16 +1,28 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './home'; // Importa a página Home
+import WhoWeAre from './WhoWeAreSection'; // A nova página
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 
 const App = () => {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        {/* Aqui você pode adicionar outras rotas para outras páginas */}
-        {/* <Route path="/about" element={<About />} /> */}
-      </Routes>
+      <div>
+        {/* Cabeçalho */}
+        <Header />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/quem-somos" element={<WhoWeAre />} />
+          {/* Outras rotas */}
+        </Routes>
+
+        {/* Rodapé */}
+        <Footer />
+      </div>
     </Router>
   );
 };

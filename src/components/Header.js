@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../style/Header.css'; // Arquivo de estilo CSS opcional
 import logo from '../img/logo_mbr.png';
 
@@ -27,8 +28,8 @@ const Header = () => {
         {/* <h1>MBR II</h1> */}
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Quem somos</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/quem-somos">Quem Somos</Link></li>
             <li><a href="#coleta">Coleta</a></li>
             <li><a href="#info">Informações</a></li>
             <li><a href="#contato">Contato</a></li>
