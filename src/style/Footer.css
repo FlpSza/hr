@@ -1,10 +1,24 @@
-footer {
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#root {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 1rem;
     width: 100%;
-    margin-top: 2rem; /* Espaço acima do footer */
 }
 
 .container {
@@ -15,21 +29,6 @@ footer {
     align-items: center;
 }
 
-.social-icons {
-    margin-top: 1rem;
-}
-
-.social-icons a {
-    margin: 0 1rem;
-    color: #fff;
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    text-decoration: underline;
-}
-
-/* Estilo para o ícone de e-mail e o texto associado */
 .footer-email {
     display: flex;
     align-items: center;
@@ -38,13 +37,25 @@ footer {
     font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
 }
 
+.footer-email p {
+    margin-left: 0.5rem; /* Espaço entre o ícone e o texto */
+}
+
 .footer-email i {
     margin-right: 0.5rem; /* Espaço entre o ícone e o texto */
 }
 
-/* Estilo da marca d'água */
 .watermark {
     font-size: 0.8rem; /* Tamanho da fonte para a marca d'água */
     margin-top: 1rem;
     opacity: 0.5; /* Translucidez para a marca d'água */
+}
+
+a {
+    color: #fff; /* Cor dos links no footer */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

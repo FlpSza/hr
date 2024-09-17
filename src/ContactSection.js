@@ -1,9 +1,15 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './style/ContactSection.css';
 
 const ContactSection = () => {
   return (
     <div className="contact-section">
+      <Helmet>
+        <title>Contato - MBR</title>
+        <meta name="description" content="Descrição da página inicial da sua empresa." />
+        <meta property="og:image" content="./img/logo_mbr.png" />
+      </Helmet>
       <h1>Entre em Contato Conosco</h1>
       <div className="contact-container">
         {/* Formulário de Contato */}

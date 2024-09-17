@@ -1,10 +1,16 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import './style/WhoWeAreSection.css'; // Estilo personalizado
 import img from './img/LOGO2.png'
 
 const WhoWeAreSection = () => {
   return (
     <div className="who-we-are-page">
+      <Helmet>
+        <title>Quem somos - MBR</title>
+        <meta name="description" content="Descrição da página inicial da sua empresa." />
+        <meta property="og:image" content="./img/logo_mbr.png" />
+      </Helmet>
       <section className="identifypage">
         <h4>Conheça nossa empresa</h4>
         <hr />

@@ -1,13 +1,19 @@
 import React from 'react';
+import processo1 from './img/processo1.png'
 import './style/ColetaSection.css'; // Estilo personalizado
 import img1 from './img/porque-reciclar.png'
-import processo1 from './img/processo1.png'
+import { Helmet } from 'react-helmet';
 import processo2 from './img/processo2.png'
 import processo3 from './img/processo3.png'
 
 const ColetaSection = () => {
   return (
     <div className="coleta-section">
+      <Helmet>
+        <title>Coleta - MBR</title>
+        <meta name="description" content="Descrição da página inicial da sua empresa." />
+        <meta property="og:image" content="./img/logo_mbr.png" />
+      </Helmet>
       {/* Título e introdução */}
       <section className="intro-coleta">
         <h4>Nosso Serviço de Coleta</h4>
