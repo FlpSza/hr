@@ -47,10 +47,10 @@
 }
 
 .team-photo {
-  max-width: 60%;
+  max-width: 40%;
   height: auto;
-  /* border-radius: 50%; Faz a imagem ficar redonda */
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* border-radius: 50%; Faz a imagem ficar redonda
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 @media (max-width: 768px) {

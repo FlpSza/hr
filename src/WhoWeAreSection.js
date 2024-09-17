@@ -1,6 +1,6 @@
 import React from 'react';
 import './style/WhoWeAreSection.css'; // Estilo personalizado
-import img from './img/porque-reciclar.png'
+import img from './img/LOGO2.png'
 
 const WhoWeAreSection = () => {
   return (
@@ -28,14 +28,14 @@ const WhoWeAreSection = () => {
         <div className="row">
           <div className="text-box">
             <h4>MISSÃO</h4>
-            <br></br>
+            <br/>
             <p>
               A MBR está equipada e estruturada adequadamente para o tratamento de óleos e gorduras vegetais e os resíduos gerados pelo processo de reciclagem, garantindo 100% de aproveitamento.
             </p>
           </div>
           <div className="text-box">
             <h4>VALORES</h4>
-            <br></br>
+            <br/>
             <p>
               Com agilidade e atendimento diferenciados, oferecemos soluções práticas e inteligentes para parceiros e clientes.
             </p>

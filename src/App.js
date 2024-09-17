@@ -5,6 +5,8 @@ import Home from './home'; // Importa a página Home
 import WhoWeAre from './WhoWeAreSection'; // A nova página
 import Header from './components/Header';
 import Footer from './components/Footer';
+import ColetaSection from './ColetaSection';
+import ContatoSection from './ContactSection'
 
 
 const App = () => {
@@ -17,6 +19,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/quem-somos" element={<WhoWeAre />} />
+          <Route path="/coleta" element= {<ColetaSection/>}/>
+          <Route path="/contato" element= {<ContatoSection/>}/>
           {/* Outras rotas */}
         </Routes>
 
