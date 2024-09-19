@@ -1,87 +1,128 @@
 /* Estilos para a linha de topo */
 .top-bar {
-    display: flex; /* Adiciona o display flex */
-    justify-content: space-between; /* Distribui o espaço entre o texto e os ícones sociais */
-    align-items: center; /* Alinha o conteúdo verticalmente no centro */
-    padding: 0.1rem; /* Menos padding para tornar mais fino */
-    background-color: green; /* Cor de fundo verde */
-    font-size: 0.8rem; /* Tamanho da fonte menor */
-    color: #fff; /* Cor do texto */
-    line-height: 1rem; /* Ajusta a altura da linha do texto */
-    height: 1.9rem; /* Define a altura total da .top-bar */
+  display: flex; /* Adiciona o display flex */
+  justify-content: space-between; /* Distribui o espaço entre o texto e os ícones sociais */
+  align-items: center; /* Alinha o conteúdo verticalmente no centro */
+  padding: 0.1rem; /* Menos padding para tornar mais fino */
+  background-color: green; /* Cor de fundo verde */
+  font-size: 0.8rem; /* Tamanho da fonte menor */
+  color: #fff; /* Cor do texto */
+  line-height: 1rem; /* Ajusta a altura da linha do texto */
+  height: 1.9rem; /* Define a altura total da .top-bar */
+}
+
+.endereco i {
+  margin-top: 1rem;
+  margin-right: 0.3rem; /* Adiciona espaço entre o ícone e o texto */
+  margin-left: 15rem;
+  color: #fff; /* Cor do ícone */
+}
+
+/* Estilos para os ícones sociais */
+.social {
+  display: flex; /* Alinha os ícones socialmente em linha */
+  align-items: center; /* Alinha verticalmente os itens no centro */
+  gap: 1rem; /* Espaço entre os ícones */
+  margin-right: 15rem;
+}
+
+.social-icons {
+  color: #fff; /* Cor dos ícones sociais */
+  text-decoration: none; /* Remove sublinhado dos links */
+  font-size: 1rem; /* Ajusta o tamanho dos ícones */
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.social-icons:hover {
+  color: #ddd; /* Cor dos ícones ao passar o mouse */
+}
+
+.social p {
+  margin: 0;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+/* Estilos para o header principal */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #fff;
+  color: black;
+  margin-right: 18rem;
+  height: 10rem;
+}
+
+/* Logo no espaço flexível */
+.header-logo {
+  height: 160px; /* Ajuste conforme necessário */
+  margin-right: 1rem; /* Espaço entre logo e título */
+  margin-left: 12rem;
+}
+
+/* Navegação dentro do header */
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Ajustes de Responsividade */
+@media (max-width: 768px) {
+  .top-bar {
+      flex-direction: column; /* Muda para coluna em telas pequenas */
+      align-items: flex-start; /* Alinha os itens à esquerda */
+      padding: 1rem; /* Ajusta o padding */
   }
-  .endereco i {
-    margin-top: 1rem;
-    margin-right: 0.3rem; /* Adiciona espaço entre o ícone e o texto */
-    margin-left: 15rem;
-    color: #fff; /* Cor do ícone */
-  }
-  
-  
-  /* Estilos para os ícones sociais */
+
+  .endereco i,
   .social {
-    display: flex; /* Alinha os ícones socialmente em linha */
-    align-items: center; /* Alinha verticalmente os itens no centro */
-    gap: 1rem; /* Espaço entre os ícones */
-    margin-right: 15rem;
+      margin-left: 0; /* Remove margem esquerda */
+      margin-right: 0; /* Remove margem direita */
   }
-  
-  .social-icons {
-    color: #fff; /* Cor dos ícones sociais */
-    text-decoration: none; /* Remove sublinhado dos links */
-    font-size: 1rem; /* Ajusta o tamanho dos ícones */
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .social-icons:hover {
-    color: #ddd; /* Cor dos ícones ao passar o mouse */
-  }
-  .social p {
-    margin: 0;
-    color: #fff;
-    font-size: 0.8rem;
-  }
-  
-  /* Estilos para o header principal */
+
   .main-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: #fff;
-    color: black;
-    margin-right: 18rem;
-    height: 10rem;
+      flex-direction: column; /* Muda para coluna em telas pequenas */
+      align-items: center; /* Centraliza os itens */
+      padding: 1rem; /* Ajusta o padding */
+      margin-right: 0; /* Remove margem direita */
   }
-  
-  /* Logo no espaço flexível */
+
   .header-logo {
-    height: 160px; /* Ajuste conforme necessário */
-    margin-right: 1rem; /* Espaço entre logo e título */
-    margin-left: 12rem;
+      margin-left: 0; /* Remove margem esquerda */
   }
-  
-  /* Navegação dentro do header */
+
   nav {
-    display: flex;
+      flex-direction: column; /* Muda a direção da navegação para coluna */
+      align-items: center; /* Centraliza os itens */
+      margin-top: 1rem; /* Adiciona espaçamento entre header e nav */
   }
-  
+
   nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+      flex-direction: column; /* Muda a direção da lista de navegação */
+      align-items: center; /* Centraliza os itens */
   }
-  
+
   nav ul li {
-    margin: 0 1rem;
+      margin: 0.5rem 0; /* Espaçamento vertical entre os itens do menu */
   }
-  
-  nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 700;
-  }
-  
+}

@@ -3,8 +3,7 @@ import processo1 from './img/processo1.png'
 import './style/ColetaSection.css'; // Estilo personalizado
 import img1 from './img/porque-reciclar.png'
 import { Helmet } from 'react-helmet';
-import processo2 from './img/processo2.png'
-import processo3 from './img/processo3.png'
+
 
 const ColetaSection = () => {
   return (
@@ -26,7 +25,7 @@ const ColetaSection = () => {
           <p>
           As coletas são feitas em estabelecimentos comerciais como restaurantes, padarias, cozinhas industriais, indústrias alimentícias, residências, além de pontos de coletas distribuídos em supermercados em toda Rio de Janeiro, Espirito Santo e Volta Redonda. Este serviço não tem custo para os estabelecimentos e certifica que o mesmo não está prejudicando o meio ambiente.<br/>
 <br/>
-A MBR é uma empresa estruturada e toda a coleta é realizada por colaboradores uniformizados e com crachá de identificação, e a frota é identificada também. É disponibilizado um recipiente para o óleo vegetal e a retirada do resíduo é feita conforme a necessidade, podendo ser semanal, quinzenal ou mensal.<br></br>
+A MBR é uma empresa estruturada e toda a coleta é realizada por colaboradores uniformizados e com crachá de identificação, e a frota é identificada também. É disponibilizado um recipiente para o óleo vegetal e a retirada do resíduo é feita conforme a necessidade, podendo ser semanal, quinzenal ou mensal.<br/>
 <br/>
 Precisamos conscientizar a população a respeito do meio ambiente. Óleo e gordura vegetal não se dissolvem o que torna um problema para rios, lagos e represas. A gordura também interfere negativamente no tratamento de esgoto, contaminando o lençol freático ou atingindo a superfície. Estimativas indicam que apenas 10% do óleo usado no mundo é tratado e reaproveitado como matéria-prima para a confecção de produtos como o Biodiesel e, é com isso que a Biolitoral se compromete. Em resumo reciclar é reaproveitar, reutilizar.
           </p>

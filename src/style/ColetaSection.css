@@ -1,106 +1,123 @@
 .coleta-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .intro-coleta h4 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .intro-coleta hr {
-    width: 60px;
-    border: 2px solid #555;
-    margin: 10px auto;
-  }
-  
-  .text-image-section {
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 0;
-    align-items: center;
-  }
-  
-  .text-content {
-    flex: 1;
-    padding-right: 20px;
-  }
-  
-  .text-content p {
-    font-size: 12px;
-    color: #555;
-    line-height: 1.8;
-    text-align: justify;
-  }
-  
-  .image-content {
-    flex: 1;
-  }
-  
-  .image-content img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  .additional-text {
-    margin: 20px 0;
-    text-align: center;
-  }
-  
-  .additional-text p {
-    font-size: 12px;
-    color: #666;
-    line-height: 1.6;
-    text-align: justify;
-  }
-  
-  .image-section h1 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  
-  .image-section-hr {
-    width: 80px; /* Ajuste a largura conforme necessário */
-    border: 2px solid #555; /* Defina a espessura e cor da borda */
-    border-radius: 60px;
-    margin: 10px auto; /* 'auto' centraliza horizontalmente */
-    margin-bottom: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-  }
-  
-  .three-images {
-    display: flex;
-    align-items: center;
-  }
-  
-  .three-images img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  @media (max-width: 768px) {
-    .text-image-section {
+.intro-coleta h4 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.intro-coleta hr {
+  width: 60px;
+  border: 2px solid #555;
+  margin: 10px auto;
+}
+
+.text-image-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  align-items: center;
+}
+
+.text-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.text-content p {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.image-content {
+  flex: 1;
+}
+
+.image-content img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.additional-text {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.additional-text p {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.image-section h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.image-section-hr {
+  width: 80px;
+  border: 2px solid #555;
+  border-radius: 60px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+}
+
+.three-images {
+  display: flex;
+  align-items: center;
+}
+
+.three-images img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .text-image-section {
       flex-direction: column;
-    }
-  
-    .text-content {
+      margin: 20px 0; /* Diminui o espaçamento vertical */
+  }
+
+  .text-content {
       padding-right: 0;
       margin-bottom: 20px;
-    }
-  
-    .three-images {
+  }
+
+  .three-images {
       flex-direction: column;
       align-items: center;
-    }
-  
-    .three-images img {
-      width: 80%;
-      margin-bottom: 20px;
-    }
   }
-  
+
+  .three-images img {
+      width: 80%; /* Ajusta a largura das imagens */
+      margin-bottom: 20px; /* Espaçamento entre as imagens */
+  }
+
+  .intro-coleta h4 {
+      font-size: 24px; /* Diminui o tamanho do texto */
+  }
+
+  .intro-coleta hr {
+      width: 40px; /* Diminui a largura da linha */
+  }
+
+  .image-section h1 {
+      font-size: 20px; /* Ajusta o tamanho do título */
+  }
+
+  .text-content p,
+  .additional-text p {
+      font-size: 14px; /* Aumenta um pouco o tamanho do texto para legibilidade */
+  }
+}

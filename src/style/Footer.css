@@ -29,16 +29,29 @@ html, body {
     align-items: center;
 }
 
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px; /* Adiciona um padding lateral em telas pequenas */
+    }
+
+    .footer-email {
+        flex-direction: column; /* Muda a direção para coluna em telas pequenas */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    .footer-email p {
+        margin-left: 0; /* Remove a margem esquerda */
+        margin-top: 0.5rem; /* Adiciona um espaçamento entre as linhas */
+    }
+}
+
 .footer-email {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
     font-size: 1rem; /* Ajuste o tamanho da fonte conforme necessário */
-}
-
-.footer-email p {
-    margin-left: 0.5rem; /* Espaço entre o ícone e o texto */
 }
 
 .footer-email i {

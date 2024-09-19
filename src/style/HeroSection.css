@@ -1,175 +1,214 @@
 /* src/style/HeroSection.css */
 .hero-section {
-    text-align: center;
-    padding: 4rem;
-    background: #f4f4f4;
+  text-align: center;
+  padding: 4rem;
+  background: #f4f4f4;
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+}
+
+.hero-section button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.sectionDois p {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.porquereciclar {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.image-gallery {
+  display: flex; /* Alinha os itens lado a lado */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 4rem; /* Espaçamento entre as imagens */
+  margin-top: 5rem;
+  flex-wrap: wrap; /* Permite quebra de linha se necessário */
+}
+
+.image-item {
+  text-align: center; /* Centraliza o texto abaixo da imagem */
+}
+
+.imgOleo {
+  width: auto; /* Mantém a proporção da imagem */
+  height: 150px; /* Define a altura máxima da imagem */
+  border-radius: 50%; /* Faz a imagem ser redonda */
+  object-fit: cover; /* Garante que a imagem cubra o círculo */
+}
+
+.info-section {
+  margin-top: 8rem;
+  background-color: #353333; /* Fundo preto */
+  padding: 2rem 0; /* Espaçamento vertical */
+  color: #fff; /* Texto branco */
+}
+
+.infoSectionItem {
+  margin-left: 15rem;
+  margin-right: 15rem;
+}
+
+.info-container {
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.info-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Alinha os itens horizontalmente */
+  gap: 2rem; /* Espaçamento entre os itens */
+  margin-bottom: 10rem;
+}
+
+.info-content h1 {
+  flex: 1; /* Toma o espaço disponível à esquerda */
+  font-size: 2rem;
+  margin: 0;
+}
+
+.info-content p {
+  flex: 2; /* Toma o espaço central */
+  text-align: justify;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.circle {
+  flex: 1; /* Toma o espaço disponível à direita */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.circle-content {
+  width: 90px;
+  height: 90px;
+  border: 5px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #fff; /* Cor do texto */
+  background-color: transparent; /* Remove o fundo colorido */
+}
+
+.circle-content span {
+  display: block;
+  max-width: 100%; /* Evita que o texto exceda o círculo */
+  max-height: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+  line-height: 1.1; /* Ajuste o espaçamento entre linhas se necessário */
+}
+
+.circle-description {
+  margin-top: 1rem; /* Espaço entre o círculo e a descrição */
+}
+
+.circle-description h6 {
+  margin: 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.circle-description p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+.cuideDaNat h1 {
+  align-items: center;
+}
+
+.cuideDaNat {
+  text-align: center; /* Centraliza o texto */
+  margin-top: 6rem;
+  margin: 2rem 0; /* Espaçamento superior e inferior */
+}
+
+.image-gallery {
+  display: flex; /* Alinha os itens lado a lado */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  gap: 1rem; /* Espaçamento entre as imagens */
+  flex-wrap: wrap; /* Permite quebra de linha se necessário */
+}
+
+.image-item {
+  text-align: center; /* Centraliza o texto abaixo da imagem */
+  margin-right: 6rem;
+}
+
+.img-circle {
+  width: 100px; /* Largura da imagem */
+  height: 100px; /* Altura da imagem */
+  border-radius: 50%; /* Faz a imagem ser redonda */
+  object-fit: cover; /* Garante que a imagem cubra o círculo */
+}
+
+.image-item h6 {
+  margin-top: 0.5rem; /* Espaço acima do título */
+  font-size: 1rem; /* Tamanho da fonte */
+}
+
+.image-item p {
+  margin-top: 0.25rem; /* Espaço acima do parágrafo */
+  font-size: 0.875rem; /* Tamanho da fonte */
+}
+
+/* Ajustes de Responsividade */
+@media (max-width: 768px) {
+  .hero-section {
+      padding: 2rem; /* Reduz padding em telas menores */
   }
-  
+
   .hero-section h2 {
-    font-size: 2.5rem;
+      font-size: 2rem; /* Reduz o tamanho da fonte */
   }
-  
+
   .hero-section p {
-    font-size: 1.2rem;
+      font-size: 1rem; /* Reduz o tamanho da fonte */
   }
-  
-  .hero-section button {
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
+
   .sectionDois p {
-    margin-left: 10rem;
-    margin-right: 10rem;
+      margin-left: 1rem; /* Reduz margens laterais */
+      margin-right: 1rem; /* Reduz margens laterais */
   }
-  
-  .porquereciclar {
-    margin-top: 3rem;
-    text-align: center;
-  }
-  
+
   .image-gallery {
-    display: flex; /* Alinha os itens lado a lado */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 4rem; /* Espaçamento entre as imagens */
-    margin-top: 5rem;
+      gap: 1rem; /* Menos espaço entre as imagens */
   }
-  
-  .image-item {
-    text-align: center; /* Centraliza o texto abaixo da imagem */
-  }
-  
-  .imgOleo {
-    width: auto; /* Mantém a proporção da imagem */
-    height: 150px; /* Define a altura máxima da imagem */
-    border-radius: 50%; /* Faz a imagem ser redonda */
-    object-fit: cover; /* Garante que a imagem cubra o círculo */
-  }
-  
-  .info-section {
-    margin-top: 8rem;
-    background-color: #353333; /* Fundo preto */
-    padding: 2rem 0; /* Espaçamento vertical */
-    color: #fff; /* Texto branco */
+
+  .info-content {
+      flex-direction: column; /* Empilha as seções */
+      align-items: center; /* Centraliza os itens */
   }
 
   .infoSectionItem {
-    margin-left: 15rem;
-    margin-right: 15rem;
-  }
-  
-  .info-container {
-    max-width: 1200px;
-    margin: 0 auto; 
-  }
-  
-  .info-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Alinha os itens horizontalmente */
-    gap: 2rem; /* Espaçamento entre os itens */
-    margin-bottom: 10rem;
-  }
-  
-  .info-content h1 {
-    flex: 1; /* Toma o espaço disponível à esquerda */
-    font-size: 2rem;
-    margin: 0;
-  }
-  
-  .info-content p {
-    flex: 2; /* Toma o espaço central */
-    text-align: justify;
-    font-size: 1rem;
-    margin: 0;
-  }
-  
-  .circle {
-    flex: 1; /* Toma o espaço disponível à direita */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .circle-content {
-    width: 90px;
-    height: 90px;
-    border: 5px solid;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.1rem;
-    color: #fff; /* Cor do texto */
-    background-color: transparent; /* Remove o fundo colorido */
-  }
-  
-  .circle-content span {
-    display: block;
-    max-width: 100%; /* Evita que o texto exceda o círculo */
-    max-height: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
-    line-height: 1.1; /* Ajuste o espaçamento entre linhas se necessário */
-  }
-  
-  .circle-description {
-    margin-top: 1rem; /* Espaço entre o círculo e a descrição */
-  }
-  
-  .circle-description h6 {
-    margin: 0;
-    font-size: 1rem;
-    color: #fff;
-  }
-  
-  .circle-description p {
-    margin: 0;
-    font-size: 0.875rem;
-    color: #fff;
+      margin-left: 1rem; /* Reduz margens laterais */
+      margin-right: 1rem; /* Reduz margens laterais */
   }
 
-  .cuideDaNat h1{
-    align-items: center;
-  }
-
-  .cuideDaNat {
-    text-align: center; /* Centraliza o texto */
-    margin-top: 6rem;
-    margin: 2rem 0; /* Espaçamento superior e inferior */
-  }
-  
-  .image-gallery {
-    display: flex; /* Alinha os itens lado a lado */
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    gap: 1rem; /* Espaçamento entre as imagens */
-    flex-wrap: wrap; /* Permite quebra de linha se necessário */
-  }
-  
   .image-item {
-    text-align: center; /* Centraliza o texto abaixo da imagem */
-    margin-right: 6rem;
+      margin-right: 0; /* Remove margem direita */
+      margin-bottom: 1rem; /* Adiciona margem inferior */
   }
-  
-  .img-circle {
-    width: 100px; /* Largura da imagem */
-    height: 100px; /* Altura da imagem */
-    border-radius: 50%; /* Faz a imagem ser redonda */
-    object-fit: cover; /* Garante que a imagem cubra o círculo */
-  }
-  
-  .image-item h6 {
-    margin-top: 0.5rem; /* Espaço acima do título */
-    font-size: 1rem; /* Tamanho da fonte */
-  }
-  
-  .image-item p {
-    margin-top: 0.25rem; /* Espaço acima do parágrafo */
-    font-size: 0.875rem; /* Tamanho da fonte */
-  }
-  
+}
