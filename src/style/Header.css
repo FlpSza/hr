@@ -89,40 +89,58 @@ nav ul li a {
 /* Ajustes de Responsividade */
 @media (max-width: 768px) {
   .top-bar {
-      flex-direction: column; /* Muda para coluna em telas pequenas */
-      align-items: flex-start; /* Alinha os itens à esquerda */
-      padding: 1rem; /* Ajusta o padding */
-  }
-
-  .endereco i,
-  .social {
-      margin-left: 0; /* Remove margem esquerda */
-      margin-right: 0; /* Remove margem direita */
+    display: none; /* Esconde a top-bar em dispositivos móveis */
   }
 
   .main-header {
-      flex-direction: column; /* Muda para coluna em telas pequenas */
-      align-items: center; /* Centraliza os itens */
-      padding: 1rem; /* Ajusta o padding */
-      margin-right: 0; /* Remove margem direita */
+    flex-direction: column; /* Muda para coluna em telas pequenas */
+    align-items: center; /* Centraliza os itens */
+    padding: 1rem; /* Ajusta o padding */
+    margin-right: 0; /* Remove margem direita */
   }
 
   .header-logo {
-      margin-left: 0; /* Remove margem esquerda */
+    margin-left: 0; /* Remove margem esquerda */
   }
 
-  nav {
-      flex-direction: column; /* Muda a direção da navegação para coluna */
-      align-items: center; /* Centraliza os itens */
-      margin-top: 1rem; /* Adiciona espaçamento entre header e nav */
+  .menu-icon {
+    display: block; /* Mostra o ícone apenas no mobile */
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px; /* Ajusta a posição do ícone */
+  }
+
+  .nav-menu {
+    z-index: 1000;
+    display: none; /* Esconde o menu por padrão no mobile */
+    flex-direction: column; /* Muda para coluna */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.open {
+    display: flex; /* Mostra o menu quando o estado está aberto */
   }
 
   nav ul {
-      flex-direction: column; /* Muda a direção da lista de navegação */
-      align-items: center; /* Centraliza os itens */
+    flex-direction: column; /* Muda a direção da lista de navegação para coluna */
   }
 
   nav ul li {
-      margin: 0.5rem 0; /* Espaçamento vertical entre os itens do menu */
+    margin: 1rem 0; /* Espaçamento vertical entre os itens do menu */
+  }
+}
+
+/* Para desktops, esconda o ícone do menu */
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none; /* Esconde o ícone em telas maiores */
   }
 }
