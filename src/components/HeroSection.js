@@ -36,7 +36,7 @@ const HeroSection = () => {
         <iframe
           width="860"
           height="630"
-          src="https://www.youtube.com/embed/Pafsuc3S6OI?si=ac4Nmhgb8QwScMtT"
+          src="https://www.youtube.com/embed/VQpy3uuUk7c?si=SZOWNoSFcxW2E0m9"
           title="YouTube video"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -89,6 +89,18 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="video-container text-center">
+        <iframe
+          width="860"
+          height="630"
+          src="https://www.youtube.com/embed/H2OOzOzhrco?si=cesFAT4SGjBbJkRI"
+          title="YouTube video"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>
 
       <div className='cuideDaNat'>
