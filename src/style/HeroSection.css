@@ -54,7 +54,7 @@
   margin-top: 8rem;
   background-color: #353333; /* Fundo preto */
   padding: 2rem 0; /* Espaçamento vertical */
-  color: #fff; /* Texto branco */
+  color: #353333; /* Texto branco */
 }
 
 .carousel-control-prev,
@@ -126,7 +126,7 @@
   justify-content: center;
   align-items: center;
   font-size: 1.1rem;
-  color: #fff; /* Cor do texto */
+  color: #353333; /* Cor do texto */
   background-color: transparent; /* Remove o fundo colorido */
 }
 
@@ -146,13 +146,13 @@
 .circle-description h6 {
   margin: 0;
   font-size: 1rem;
-  color: #fff;
+  color: #353333;
 }
 
 .circle-description p {
   margin: 0;
   font-size: 0.875rem;
-  color: #fff;
+  color: #353333;
 }
 
 .cuideDaNat h1 {
