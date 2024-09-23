@@ -46,7 +46,7 @@ const ContactSection = () => {
           <p>(21) 99965-0670</p>
           <p>(21) 96841-1741</p>
           <p>3654-3128</p>
-          <p><strong>E-mail:</strong> contato@empresa.com</p>
+          <p><strong>E-mail:</strong> contato@mbroleovegetal.com</p>
 
           <div className="google-map">
             <iframe

@@ -17,7 +17,7 @@ const Header = () => {
           <i className="fa fa-map-marker"></i> Rua Honduras, 25 - Penha, RJ
         </p> 
         <div className="social">
-          <a rel="nofollow" className="social-icons" href="mailto:ofellipe2023@gmail.com" target="_blank" title="Envie um E-mail">
+          <a rel="nofollow" className="social-icons" href="mailto:contato@mbroleovegetal.com" target="_blank" title="Envie um E-mail">
             <i className="fa fa-envelope fa-x3"></i>
           </a>
           <a rel="nofollow" className="social-icons" href="https://www.facebook.com/" target="_blank" title="Visite nossa página no Facebook">
