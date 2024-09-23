@@ -10,6 +10,8 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
     <header>
       <div className="top-bar">
@@ -40,11 +42,11 @@ const Header = () => {
         {/* Menu de navegação condicional */}
         <nav className={isMenuOpen ? "nav-menu open" : "nav-menu"}>
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/quem-somos">Quem Somos</Link></li>
-            <li><a href="/coleta">Coleta</a></li>
-            <li><a href="/info">Informações</a></li>
-            <li><a href="/contato">Contato</a></li>
+          <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+          <li><Link to="/quem-somos" onClick={closeMenu}>Quem Somos</Link></li>
+          <li><a href="/coleta" onClick={closeMenu}>Coleta</a></li>
+          <li><a href="/info" onClick={closeMenu}>Informações</a></li>
+          <li><a href="/contato" onClick={closeMenu}>Contato</a></li>
           </ul>
         </nav>
       </div>
