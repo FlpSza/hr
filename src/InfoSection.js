@@ -7,6 +7,7 @@ import Descarte from './img/pic15.jpeg';
 import ColetaOleoVegetal from './img/coleta-oleo-vegetal-usado-01.jpg'
 import post5 from './img/pic8.jpeg'
 import post6 from './img/pic13.jpeg'
+import post7 from './img/coletaDomiciliar.jpeg'
 import { Helmet } from 'react-helmet';
 
 const InfoSection = () => {
@@ -202,6 +203,37 @@ const InfoSection = () => {
           "Ligue para (21) 99965-0670 ou entre em contato por email."
         ]
       }
+    },
+    {
+      id: 7,
+      title: "Coleta Domiciliar de Óleo Usado",
+      image: post7,
+      description: "Informações sobre a Coleta Domiciliar de Óleo Usado.",
+      content: {
+        header1: "A IMPORTÂNCIA DA COLETA DOMICILIAR DE ÓLEO USADO",
+        paragraphs1: [
+          "A coleta domiciliar de óleo vegetal usado é essencial para garantir o destino correto desse resíduo, que pode ser transformado em produtos como biodiesel, sabão ecológico e outros. Essa prática ajuda a reduzir o impacto ambiental e evita o descarte incorreto.",
+          "Em muitos lares, o óleo de cozinha é despejado diretamente no esgoto, o que causa sérios problemas, como o entupimento de tubulações e a poluição de rios e mares. A coleta domiciliar assegura que esse resíduo tenha uma destinação adequada, feita por empresas especializadas."
+        ],
+        header2: "BENEFÍCIOS DA COLETA DOMICILIAR DE ÓLEO USADO",
+        paragraphs2: [
+          "Desde 2008, a MBR realiza a coleta domiciliar de óleo usado com responsabilidade e transparência. Ao coletar o óleo diretamente nas residências, a empresa oferece vantagens como: pagamento pelo material, troca por produtos de limpeza e a certeza de uma destinação sustentável.",
+          "Os principais benefícios da coleta domiciliar de óleo usado incluem:",
+          "• Preservação ambiental ao evitar a poluição dos recursos hídricos;",
+          "• Prevenção de entupimentos nas redes de esgoto;",
+          "• Geração de renda extra para os participantes;",
+          "• Produção de produtos ecológicos, como sabão, biodiesel e velas."
+        ],
+        header3: "SERVIÇO DE EXCELÊNCIA NA COLETA DOMICILIAR",
+        paragraphs3: [
+          "Com sede na Praia Grande, São Paulo, a MBR atende diversas regiões, incluindo toda a Grande São Paulo e cidades do litoral. A coleta domiciliar é agendada e realizada de forma rápida e eficiente. Para residências, é solicitado o mínimo de 10 litros de óleo usado para a retirada.",
+          "A MBR se destaca por seu compromisso com o meio ambiente e a satisfação dos clientes. Além de ser licenciada pela CETESB e IBAMA, a empresa oferece certificados de destinação para comprovação junto aos órgãos reguladores."
+        ],
+        header4: "Quer saber mais sobre a Coleta Domiciliar de Óleo Usado?",
+        paragraphs4: [
+          "Entre em contato pelo telefone (21) 99965-0670 ou envie um e-mail para obter mais informações."
+        ]
+      }      
     }
   ];
 
