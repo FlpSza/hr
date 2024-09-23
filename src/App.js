@@ -6,7 +6,8 @@ import WhoWeAre from './WhoWeAreSection'; // A nova página
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ColetaSection from './ColetaSection';
-import ContatoSection from './ContactSection'
+import ContatoSection from './ContactSection';
+import InfoSection from './InfoSection';
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/quem-somos" element={<WhoWeAre />} />
           <Route path="/coleta" element= {<ColetaSection/>}/>
           <Route path="/contato" element= {<ContatoSection/>}/>
+          <Route path="/info" element= {<InfoSection/>}/>
           {/* Outras rotas */}
         </Routes>
 
