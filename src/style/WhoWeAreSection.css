@@ -49,6 +49,7 @@
 .team-photo {
   max-width: 100%; /* Mantém a imagem responsiva */
   height: auto;
+  width: 50%;
   border-radius: 10%; /* Levemente arredondado */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
 }

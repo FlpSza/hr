@@ -41,6 +41,7 @@
     font-weight: 700;
     color: #333;
 }
+
 .abaixoDaImagem {
     margin-top: 1.5rem; /* Ajuste o valor conforme necessário */
     font-size: 1.25rem; /* Tamanho do texto */
@@ -50,7 +51,6 @@
 
 .abaixoDaImagemp {
     color: black;
-
 }
 
 /* Estilos para o modal */
@@ -113,12 +113,22 @@
 
     .modal-content {
         width: 90%; /* Modal maior em telas menores */
+        padding: 1rem; /* Reduzir padding em dispositivos menores */
+    }
+
+    .content-section {
+        flex-direction: column; /* Muda para coluna em dispositivos menores */
+        align-items: center; /* Centraliza os itens */
     }
 
     .content-image {
         width: 100%; /* Imagem ocupa 100% da largura em telas menores */
         margin-right: 0; /* Remove margem direita em telas menores */
-        margin-bottom: 20px; /* Espaço entre imagem e texto */
+        margin-bottom: 10px; /* Espaço entre imagem e texto */
+    }
+
+    .text-content {
+        text-align: center; /* Centraliza o texto em telas menores */
     }
 }
 

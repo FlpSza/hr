@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './style/info.css'; // Estilo personalizado
 import ColetaOleo from './img/pic2.jpeg';
 import ColetaGarrafa from './img/pic3.jpeg';
@@ -41,7 +41,7 @@ const InfoSection = () => {
         ],
         header4: "PARA SABER MAIS SOBRE A COLETA DE OLEO DE COZINHA",
         paragraphs4: [
-          "Ligue para 13 3473-8800 ou clique aqui e entre em contato por email."
+          "Ligue para (21) 99965-0670 ou entre em contato por email."
         ]
       }
     },
@@ -77,7 +77,7 @@ const InfoSection = () => {
         ],
         header4: "Para saber mais sobre Coleta de oleo cozinha",
         paragraphs4: [
-          "Ligue para 13 3473-8800 ou clique aqui e entre em contato por email."
+          "Ligue para (21) 99965-0670 ou entre em contato por email."
         ] 
       }
     },
@@ -107,7 +107,7 @@ const InfoSection = () => {
         paragraphs3: ["A MBR presta serviço de compra, tratamento, destinação final e coleta de oleo vegetal usado. E, para isso, a companhia conta com infraestrutura adequada e possui autorização de funcionamento, licença de operação da CETESB e IBAMA. Ademais, a empresa possui atendimento em São Paulo e cidades próximas, como São Bernardo do Campo e Guarulhos, oferecendo o melhor atendimento."],
         header4: "Para saber mais sobre Coleta de oleo cozinha",
         paragraphs4: [
-          "Ligue para 13 3473-8800 ou clique aqui e entre em contato por email."
+          "Ligue para (21) 99965-0670 ou entre em contato por email."
         ]
       }
     },
@@ -137,7 +137,7 @@ const InfoSection = () => {
         ],
         header4: "Para saber mais sobre Coleta de oleo cozinha",
         paragraphs4: [
-          "Ligue para 13 3473-8800 ou clique aqui e entre em contato por email."
+          "Ligue para (21) 99965-0670 ou entre em contato por email."
         ]
       }
     },
@@ -170,7 +170,7 @@ const InfoSection = () => {
         ],
         header4: "Para saber mais sobre Coleta de oleo cozinha",
         paragraphs4: [
-          "Ligue para 13 3473-8800 ou clique aqui e entre em contato por email."
+          "Ligue para (21) 99965-0670 ou entre em contato por email."
         ]
       }
     },
@@ -199,7 +199,7 @@ const InfoSection = () => {
         ],
         header4: "Para saber mais sobre Coleta de oleo cozinha",
         paragraphs4: [
-          "Ligue para 13 3473-8800 ou clique aqui e entre em contato por email."
+          "Ligue para (21) 99965-0670 ou entre em contato por email."
         ]
       }
     }
@@ -212,6 +212,19 @@ const InfoSection = () => {
   const closeModal = () => {
     setSelectedItem(null);
   };
+
+  const handleClickOutside = (event) => {
+    if (selectedItem && event.target.closest('.modal-content') === null) {
+      setSelectedItem(null);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [selectedItem]);
 
   return (
     <div className="info-section">
